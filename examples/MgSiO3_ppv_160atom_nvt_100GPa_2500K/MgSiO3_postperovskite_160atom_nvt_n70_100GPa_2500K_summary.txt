@@ -1,0 +1,61 @@
+================================================================================
+AIMD TRAINING SUBSET SELECTION SUMMARY
+================================================================================
+
+system label                : MgSiO3_postperovskite_160atom
+ensemble                    : NVT
+pressure                    : 100.0 GPa
+temperature                 : 2500 K
+root                        : /Users/amrt/Desktop/devops/mlip-training-set-extraction/examples/MgSiO3_ppv_160atom_nvt_100GPa_2500K/raw
+detected composition        : {'Mg': 32, 'Si': 32, 'O': 96}
+atoms/frame                 : 160
+
+trajectory segments:
+  1. main: /Users/amrt/Desktop/devops/mlip-training-set-extraction/examples/MgSiO3_ppv_160atom_nvt_100GPa_2500K/raw/OUTCAR
+
+number of OUTCAR segments   : 1
+raw ionic frames combined   : 2000
+requested final window      : 1000
+candidate first/last        : 1000 / 1998
+candidate stride            : 2
+candidate count before QC   : 500
+valid candidates            : 500
+rejected candidates         : 0
+SOAP-FPS                    : 50
+physical tails              : 10
+temporal coverage           : 10
+TOTAL SELECTED              : 70
+selected global range       : 1004 .. 1976
+max SOAP cosine similarity  : 0.9999980115
+
+Labels:
+  REF_energy : eV
+  REF_forces : eV/Angstrom
+  REF_stress : eV/Angstrom^3
+
+Stress Voigt order:
+  xx yy zz yz xz xy
+
+Metadata:
+  source_system
+  source_family
+  source_ensemble
+  source_pressure_GPa (if --pressure given)
+  source_temperature_K (if --temperature given)
+  source_global_frame
+  source_segment
+  source_segment_frame
+  selection_method
+  source_file
+
+extxyz:
+  /Users/amrt/Desktop/devops/mlip-training-set-extraction/examples/MgSiO3_ppv_160atom_nvt_100GPa_2500K/MgSiO3_postperovskite_160atom_nvt_n70_100GPa_2500K.extxyz
+
+selection CSV:
+  /Users/amrt/Desktop/devops/mlip-training-set-extraction/examples/MgSiO3_ppv_160atom_nvt_100GPa_2500K/MgSiO3_postperovskite_160atom_nvt_n70_100GPa_2500K_selection.csv
+
+rejected CSV:
+  /Users/amrt/Desktop/devops/mlip-training-set-extraction/examples/MgSiO3_ppv_160atom_nvt_100GPa_2500K/MgSiO3_postperovskite_160atom_nvt_n70_100GPa_2500K_rejected.csv
+
+extxyz read-back verification: PASS
+STATUS = PASS

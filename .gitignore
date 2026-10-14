@@ -1,0 +1,21 @@
+# VASP AIMD trajectories - large, not meant to be committed
+OUTCAR
+OUTCAR.*
+WAVECAR
+CHG
+CHGCAR
+vasprun.xml
+vaspout.h5
+POTCAR
+
+# extracted training-set outputs - regenerate them, don't commit
+# (the one real worked example that does get committed lives under
+# examples/ and is added explicitly, not covered by this rule)
+training_subset/
+
+# python
+__pycache__/
+*.pyc
+
+# os
+.DS_Store
